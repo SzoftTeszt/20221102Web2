@@ -6,4 +6,114 @@
 }
 body{
     font-family: 'Roboto', sans-serif;
+    background: url('../pics/bg-body.jpg') no-repeat;
+    background-size: cover;
+}
+#container{
+    max-width: 800px;
+    margin:80px auto;
+    box-shadow: 0 0 200px rgba(255,255,255,.5);
+}
+#header{
+    background: url('../pics/bg-header.jpg');
+    height: 360px;
+    position: relative;
+}
+#header ul{
+    list-style: none;
+    
+}
+#header #nav{
+    background-color: rgba(255,0,0,0.6) ;
+    position:absolute;
+    left:0; 
+    right:0;
+    bottom:0;
+}
+#nav>ul>li{
+    float:left;
+}
+#nav .has-submenu {
+    position: relative;
+}
+
+#nav .has-submenu:hover .submenu {
+    display: block;
+}
+
+#nav .has-submenu::after{
+    content:'🢓';
+    color:white;
+    position: absolute;
+    top:24px;
+    right: 10px;
+    
+}
+#nav .has-submenu>a{
+    padding-right: 35px;
+}
+#nav .submenu {
+    position: absolute;
+    left:0;
+    background-color: rgba(190,0,0,1);
+    width: 220px;
+    display:none;
+}
+
+#nav ul::after, #nav::after {
+    content:'';
+    clear:both;
+    display: table;
+}
+#header ul li a{
+    padding: 20px;
+    text-decoration: none;
+    color:white;
+    display: block;
+}
+#header ul li a:hover{}
+
+#content{
+    background: white;
+    padding: 40px;
+}
+#content p{
+    line-height: 1.5;
+}
+#content h1{
+    margin-bottom: 40px;
+}
+#content h2{
+    margin: 20px 0 30px 0;
+}
+#content p{
+    margin-bottom: 10px;
+}
+.cookie-accept{
+    background-color: rgba(0,0,0,0.8);
+    color:white;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+.cookie-accept #gomb{
+    background-color: yellow;
+    color:black;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.cookie-accept #gomb:hover{
+    background-color: red;
+    color:white;
+}
+
+#acceptgomb:checked  .cookie-accept{
+   
+    display: none;
+    
 }
