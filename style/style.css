@@ -111,8 +111,11 @@ body{
     background-color: red;
     color:white;
 }
+#acceptgomb{
+    display:none;
+}
 
-#acceptgomb:checked  .cookie-accept{
+#acceptgomb:checked ~ .cookie-accept{
    
     display: none;
     
